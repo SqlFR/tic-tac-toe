@@ -1,0 +1,58 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: brown;
+
+}
+h1 {
+    height: 40px;
+}
+.grid {
+    position: relative;
+    background-color:rgba(0, 128, 0, 0.356);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    border: 2px solid black;
+}
+
+.result {
+    display: none;
+    position: absolute;
+    background-color: brown;
+    color: black;
+    height: 120px;
+    width: 280px;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin-top: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 10px;
+    font-size: 36px;
+    font-weight: 600;    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
